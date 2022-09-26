@@ -19,6 +19,16 @@ public class WaveSpawner : MonoBehaviour {
 
 	private int waveIndex = 0;
 
+	public void ResetData()
+	{
+		EnemiesAlive = 0;
+		countdown = 2;
+
+		// ด๚ธี
+		print(EnemiesAlive);
+		print(countdown);
+	}
+
 	void Update ()
 	{
 		if (EnemiesAlive > 0)
