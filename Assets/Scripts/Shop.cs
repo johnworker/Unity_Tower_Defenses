@@ -6,6 +6,8 @@ public class Shop : MonoBehaviour {
 	public TurretBlueprint missileLauncher;
 	public TurretBlueprint laserBeamer;
 	public TurretBlueprint bumpTurret;
+	public TurretBlueprint tankTurret;
+	public TurretBlueprint energyTurret;
 
 	BuildManager buildManager;
 
@@ -36,6 +38,18 @@ public class Shop : MonoBehaviour {
 	{
 		Debug.Log("Bump Turret Selected");
 		buildManager.SelectTurretToBuild(bumpTurret);
+	}
+
+	public void SelectTankTurret()
+	{
+		Debug.Log("Tank Turret Selected");
+		buildManager.SelectTurretToBuild(tankTurret);
+	}
+
+	public void SelectEnergyTurret()
+	{
+		Debug.Log("Energy Turret Selected");
+		buildManager.SelectTurretToBuild(energyTurret);
 	}
 
 

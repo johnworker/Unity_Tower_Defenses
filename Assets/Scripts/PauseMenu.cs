@@ -39,6 +39,7 @@ public class PauseMenu : MonoBehaviour {
 
 	public void Menu ()
 	{
+		FindObjectOfType<WaveSpawner>().ResetData();
 		Toggle();
 		sceneFader.FadeTo(menuSceneName);
 	}
