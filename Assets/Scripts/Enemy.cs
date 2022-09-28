@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour {
 
 	private bool isDead = false;
 
+
 	void Start ()
 	{
 		speed = startSpeed;
